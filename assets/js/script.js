@@ -79,40 +79,65 @@ if (contactForm) {
 
             // Tentar ler o texto da resposta primeiro
             const responseText = await response.text();
-            console.log('Resposta do servidor:', responseText);
+            console.log('Resposta do servidor (texto):', responseText);
+            console.log('Content-Type:', response.headers.get('content-type'));
 
             if (!response.ok) {
-                throw new Error('Erro ao enviar formulário');
+                // Tentar parsear como JSON se possível
+                let errorData;
+                try {
+                    errorData = JSON.parse(responseText);
+                } catch (e) {
+                    errorData = { error: responseText || `Erro HTTP ${response.status}` };
+                }
+                throw new Error(errorData.error || `Erro ao enviar formulário (Status: ${response.status})`);
             }
             
-            const result = await response.json();
+            // Verificar se a resposta é JSON
+            const contentType = response.headers.get('content-type');
+            let result;
+            
+            if (contentType && contentType.includes('application/json')) {
+                // Se for JSON, tentar parsear
+                try {
+                    result = JSON.parse(responseText);
+                } catch (e) {
+                    console.warn('Resposta marcada como JSON mas não é válida:', responseText);
+                    // Se status for 200, considerar como sucesso mesmo sem JSON válido
+                    result = { success: true, message: 'Formulário enviado com sucesso' };
+                }
+            } else {
+                // Se não for JSON mas status for 200, considerar sucesso
+                console.log('Resposta não é JSON, mas status é OK. Considerando sucesso.');
+                result = { success: true, message: responseText || 'Formulário enviado com sucesso' };
+            }
+
             // Verificar se houve algum erro na resposta
             if (result.error) {
                 throw new Error(result.error);
             }
 
             // Log opcional para debug
-            console.log('Formulário enviado:', result);
+            console.log('Formulário enviado com sucesso:', result);
             
             // Show success message
             showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
             
             // Reset form
             contactForm.reset();
-            
+                        
             // Redirecionar após 2 segundos
             // setTimeout(() => {
             //     window.location.href = '/contato.html?enviado=sucesso';
             // }, 2000);
         } catch (error) {
-            console.error('Erro ao enviar email:', error);
+            console.error('Erro completo ao enviar email:', error);
+            console.error('Stack trace:', error.stack);
             
             // Show error message
             let errorMessage = 'Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato via WhatsApp.';
             
-            if (error.text) {
-                errorMessage = `Erro: ${error.text}`;
-            } else if (error.message) {
+            if (error.message) {
                 errorMessage = `Erro: ${error.message}`;
             }
             
