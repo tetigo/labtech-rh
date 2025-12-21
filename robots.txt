@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://labtech-rh.com.br/sitemap.xml
+
+# Permitir acesso às imagens em assets/images
+Allow: /assets/images/
+
+# Bloquear outros diretórios de assets se necessário
+# Disallow: /assets/

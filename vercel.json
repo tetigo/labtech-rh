@@ -1,0 +1,27 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.labtech-rh.com.br"
+          }
+        ],
+        "destination": "https://labtech-rh.com.br/$1",
+        "permanent": true
+      }
+    ],
+    "headers": [
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+            {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+            }
+        ]
+      }
+    ]
+  }
+  
