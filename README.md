@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![LabTech-RH Logo](assets/images/logo2-pequena.png)
+![LabTech-RH Logo](/assets/images/logo2-pequena.png)
 
 **Conectando sua empresa aos melhores talentos**
 
