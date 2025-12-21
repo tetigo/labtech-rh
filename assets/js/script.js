@@ -48,106 +48,119 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+  
+    if (params.get('enviado') === 'sucesso') {
+      showNotification(
+        'Mensagem enviada com sucesso! Entraremos em contato em breve.',
+        'success'
+      );
+    }
+  });
+
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+    // contactForm.addEventListener('submit', async (e) => {
+    //     e.preventDefault();
         
-        const formData = new FormData(contactForm);
-        const submitButton = contactForm.querySelector('.btn-submit');
-        const originalText = submitButton.textContent;
+    //     const formData = new FormData(contactForm);
+    //     const submitButton = contactForm.querySelector('.btn-submit');
+    //     const originalText = submitButton.textContent;
         
-        // Disable submit button
-        submitButton.disabled = true;
-        submitButton.textContent = 'Enviando...';
+    //     console.log(">>>", formData)
+
+    //     // Disable submit button
+    //     submitButton.disabled = true;
+    //     submitButton.textContent = 'Enviando...';
         
-        try {
-            // Enviar via Formly.email
-            const response = await fetch('https://formly.email/submit', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
+    //     try {
+    //         // Enviar via Formly.email
+    //         const response = await fetch('https://formly.email/submit', {
+    //             method: 'POST',
+    //             body: formData,
+    //             headers: {
+    //                 'Accept': 'application/json'
+    //             }
+    //         });
 
-            // Log da resposta para debug
-            console.log('Status da resposta:', response.status);
-            console.log('Headers da resposta:', response.headers);
+    //         // Log da resposta para debug
+    //         console.log('Status da resposta:', response.status);
+    //         console.log('Headers da resposta:', response.headers);
 
-            // Tentar ler o texto da resposta primeiro
-            const responseText = await response.text();
-            console.log('Resposta do servidor (texto):', responseText);
-            console.log('Content-Type:', response.headers.get('content-type'));
+    //         // Tentar ler o texto da resposta primeiro
+    //         const responseText = await response.text();
+    //         console.log('Resposta do servidor (texto):', responseText);
+    //         console.log('Content-Type:', response.headers.get('content-type'));
 
-            if (!response.ok) {
-                // Tentar parsear como JSON se possível
-                let errorData;
-                try {
-                    errorData = JSON.parse(responseText);
-                } catch (e) {
-                    errorData = { error: responseText || `Erro HTTP ${response.status}` };
-                }
-                throw new Error(errorData.error || `Erro ao enviar formulário (Status: ${response.status})`);
-            }
+    //         if (!response.ok) {
+    //             // Tentar parsear como JSON se possível
+    //             let errorData;
+    //             try {
+    //                 errorData = JSON.parse(responseText);
+    //             } catch (e) {
+    //                 errorData = { error: responseText || `Erro HTTP ${response.status}` };
+    //             }
+    //             throw new Error(errorData.error || `Erro ao enviar formulário (Status: ${response.status})`);
+    //         }
             
-            // Verificar se a resposta é JSON
-            const contentType = response.headers.get('content-type');
-            let result;
+    //         // Verificar se a resposta é JSON
+    //         const contentType = response.headers.get('content-type');
+    //         let result;
             
-            if (contentType && contentType.includes('application/json')) {
-                // Se for JSON, tentar parsear
-                try {
-                    result = JSON.parse(responseText);
-                } catch (e) {
-                    console.warn('Resposta marcada como JSON mas não é válida:', responseText);
-                    // Se status for 200, considerar como sucesso mesmo sem JSON válido
-                    result = { success: true, message: 'Formulário enviado com sucesso' };
-                }
-            } else {
-                // Se não for JSON mas status for 200, considerar sucesso
-                console.log('Resposta não é JSON, mas status é OK. Considerando sucesso.');
-                result = { success: true, message: responseText || 'Formulário enviado com sucesso' };
-            }
+    //         if (contentType && contentType.includes('application/json')) {
+    //             // Se for JSON, tentar parsear
+    //             try {
+    //                 result = JSON.parse(responseText);
+    //             } catch (e) {
+    //                 console.warn('Resposta marcada como JSON mas não é válida:', responseText);
+    //                 // Se status for 200, considerar como sucesso mesmo sem JSON válido
+    //                 result = { success: true, message: 'Formulário enviado com sucesso' };
+    //             }
+    //         } else {
+    //             // Se não for JSON mas status for 200, considerar sucesso
+    //             console.log('Resposta não é JSON, mas status é OK. Considerando sucesso.');
+    //             result = { success: true, message: responseText || 'Formulário enviado com sucesso' };
+    //         }
 
-            // Verificar se houve algum erro na resposta
-            if (result.error) {
-                throw new Error(result.error);
-            }
+    //         // Verificar se houve algum erro na resposta
+    //         if (result.error) {
+    //             throw new Error(result.error);
+    //         }
 
-            // Log opcional para debug
-            console.log('Formulário enviado com sucesso:', result);
+    //         // Log opcional para debug
+    //         console.log('Formulário enviado com sucesso:', result);
             
-            // Show success message
-            showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+    //         // Show success message
+    //         showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
             
-            // Reset form
-            contactForm.reset();
+    //         // Reset form
+    //         contactForm.reset();
                         
-            // Redirecionar após 2 segundos
-            // setTimeout(() => {
-            //     window.location.href = '/contato.html?enviado=sucesso';
-            // }, 2000);
-        } catch (error) {
-            console.error('Erro completo ao enviar email:', error);
-            console.error('Stack trace:', error.stack);
+    //         // Redirecionar após 2 segundos
+    //         // setTimeout(() => {
+    //         //     window.location.href = '/contato.html?enviado=sucesso';
+    //         // }, 2000);
+    //     } catch (error) {
+    //         console.error('Erro completo ao enviar email:', error);
+    //         console.error('Stack trace:', error.stack);
             
-            // Show error message
-            let errorMessage = 'Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato via WhatsApp.';
+    //         // Show error message
+    //         let errorMessage = 'Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato via WhatsApp.';
             
-            if (error.message) {
-                errorMessage = `Erro: ${error.message}`;
-            }
+    //         if (error.message) {
+    //             errorMessage = `Erro: ${error.message}`;
+    //         }
             
-            showNotification(errorMessage, 'error');
-        } finally {
-            // Re-enable submit button
-            submitButton.disabled = false;
-            submitButton.textContent = originalText;
-        }
-    });
+    //         showNotification(errorMessage, 'error');
+    //     } finally {
+    //         // Re-enable submit button
+    //         submitButton.disabled = false;
+    //         submitButton.textContent = originalText;
+    //     }
+    // });
 }
 
 // Notification system

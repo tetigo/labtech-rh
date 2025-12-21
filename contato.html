@@ -69,9 +69,21 @@
             
             <div class="contact-wrapper">
                 <div class="contact-form-container">
-                    <form id="contactForm" class="contact-form" action="https://formly.email/submit" method="POST" enctype="multipart/form-data">
-                        <input type="hidden" name="access_key" value="38524a5a675d416985b2d356709b3084">
-                        <input type="hidden" name="redirect" value="https://labtech-rh.com.br/contato.html?enviado=sucesso">
+                    <form 
+                        action="https://formsubmit.co/labtech.rh.contato@gmail.com"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="contact-form"
+                    >
+                        <input type="hidden" name="_subject" value="Novo contato - LabTech RH">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://labtech-rh.com.br/contato.html?enviado=sucesso">
+
+
+                    <!-- <form id="contactForm" class="contact-form" action="https://formly.email/submit" method="POST" enctype="multipart/form-data"> -->
+                        <!-- <input type="hidden" name="access_key" value="38524a5a675d416985b2d356709b3084">
+                        <input type="hidden" name="redirect" value="https://labtech-rh.com.br/contato.html?enviado=sucesso"> -->
                         <div class="form-group">
                             <label for="tipoContato">Você é:</label>
                             <select id="tipoContato" name="tipoContato" required>
@@ -108,7 +120,8 @@
 
                         <div class="form-group">
                             <label for="arquivo">Anexar Arquivo (opcional)</label>
-                            <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.txt">
+                            <!-- <input type="file" id="arquivo" name="file" accept=".pdf,.doc,.docx,.txt"> -->
+                            <input type="file" id="arquivo" name="attachment" accept=".pdf,.doc,.docx,.txt">
                             <small>Formatos aceitos: PDF, DOC, DOCX, TXT (máx. 5MB)</small>
                         </div>
 
