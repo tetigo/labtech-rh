@@ -47,54 +47,42 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // ========================================
-  // CONTACT FORM
-  // ========================================
-  const contactForm = document.getElementById('contactForm');
-  const fileInput = document.getElementById('file');
-  const fileLabel = document.getElementById('fileLabel');
-  const submitBtn = document.getElementById('submitBtn');
-  
-  // File upload handling
-  fileInput.addEventListener('change', function() {
+// CONTACT FORM (SEM INTERFERIR NO SUBMIT)
+// ========================================
+const contactForm = document.getElementById('contactForm');
+const fileInput = document.getElementById('file');
+const fileLabel = document.getElementById('fileLabel');
+
+if (fileInput) {
+  fileInput.addEventListener('change', function () {
     if (this.files && this.files[0]) {
       const file = this.files[0];
-      const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
-      
+      const allowedTypes = [
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'text/plain'
+      ];
+
       if (!allowedTypes.includes(file.type)) {
-        alert('Arquivo inválido. Por favor, selecione um arquivo PDF, DOC, DOCX ou TXT.');
+        alert('Arquivo inválido. Use PDF, DOC, DOCX ou TXT.');
         this.value = '';
         return;
       }
-      
+
       if (file.size > 5 * 1024 * 1024) {
-        alert('Arquivo muito grande. O arquivo deve ter no máximo 5MB.');
+        alert('Arquivo muito grande. Máximo 5MB.');
         this.value = '';
         return;
       }
-      
-      fileLabel.textContent = file.name;
-    } else {
-      fileLabel.textContent = 'Clique para anexar ou arraste o arquivo';
+
+      if (fileLabel) {
+        fileLabel.textContent = file.name;
+      }
     }
   });
-  
-  // Form submission
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<div class="spinner"></div> Enviando...';
-    submitBtn.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(function() {
-      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-      contactForm.reset();
-      fileLabel.textContent = 'Clique para anexar ou arraste o arquivo';
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    }, 1500);
-  });
+}
+
   
   // ========================================
   // SCROLL ANIMATIONS

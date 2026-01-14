@@ -622,20 +622,17 @@
         <div class="contact-form-wrapper">
           <!-- <form class="card-professional contact-form" id="contactForm"> -->
           <form
+            id="contactForm"
             action="https://formsubmit.co/contato@labtech-rh.com.br"
             method="POST"
             enctype="multipart/form-data"
             class="card-professional contact-form"
-            id="contactForm"
-            onsubmit="handleSubmit(event)"
           >
           
             <input type="hidden" name="_subject" value="Novo contato - LabTech RH">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
-            <input type="text" name="_honey" style="display:none">
-
-            <!-- <input type="hidden" name="_next" value="https://labtech-rh.com.br/contato.html?enviado=sucesso"> -->
+            <input type="hidden" name="_next" value="https://labtech-rh.com.br/#contato">
 
             <div class="form-row">
               <div class="form-group full-width">
@@ -796,7 +793,7 @@
   </div>
   
   <!-- JavaScript -->
-  <script>
+  <!-- <script>
     function handleSubmit(e) {
       e.preventDefault(); // impede redirect
     
@@ -840,7 +837,7 @@
         `;
       });
     }
-    </script>
+    </script> -->
     
   <script src="assets/js/script.js"></script>
 </body>
