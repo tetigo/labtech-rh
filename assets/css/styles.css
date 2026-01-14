@@ -1492,3 +1492,22 @@ input, select, textarea {
     bottom: 16px;
   }
 }
+
+.form-success,
+.form-error {
+  display: none;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.form-success {
+  background: #e6f9f0;
+  color: #0f5132;
+}
+
+.form-error {
+  background: #fdecea;
+  color: #842029;
+}

@@ -622,7 +622,7 @@
         <div class="contact-form-wrapper">
           <!-- <form class="card-professional contact-form" id="contactForm"> -->
           <form
-            action="https://formsubmit.co/contato@labtech-rh.com.br"
+            id="contactForm"
             method="POST"
             enctype="multipart/form-data"
             class="card-professional contact-form"
@@ -631,8 +631,6 @@
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="Novo contato - LabTech RH">
-            <input type="hidden" name="_next" value="https://labtech-rh.com.br/#contato">
-            <input type="hidden" name="_honey" style="display:none">
 
             <div class="form-row">
               <div class="form-group full-width">
@@ -700,6 +698,12 @@
               Enviar Mensagem
             </button>
           </form>
+          <div id="formSuccess" class="form-success">
+            ✅ Mensagem enviada com sucesso!
+          </div>
+          <div id="formError" class="form-error">
+            ❌ Erro ao enviar. Tente novamente.
+          </div>
         </div>
       </div>
     </div>
@@ -793,51 +797,51 @@
   </div>
   
   <!-- JavaScript -->
-  <!-- <script>
-    function handleSubmit(e) {
-      e.preventDefault(); // impede redirect
-    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       const form = document.getElementById("contactForm");
-      const toast = document.getElementById("toast");
-      const submitBtn = document.getElementById("submitBtn");
+      const successMsg = document.getElementById("formSuccess");
+      const errorMsg = document.getElementById("formError");
     
-      submitBtn.disabled = true;
-      submitBtn.innerText = "Enviando...";
+      if (!form) return;
     
-      fetch("https://formsubmit.co/ajax/contato@labtech-rh.com.br", {
-        method: "POST",
-        body: new FormData(form)
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success === "true") {
-          form.reset();
+      form.addEventListener("submit", handleSubmit);
     
-          toast.classList.add("show");
+      function handleSubmit(e) {
+        e.preventDefault(); // 🚫 impede redirecionamento
     
-          setTimeout(() => {
-            toast.classList.remove("show");
-          }, 4000);
-        } else {
-          alert("Erro ao enviar. Tente novamente.");
-        }
-      })
-      .catch(() => {
-        // 🔥 fallback manual (se AJAX falhar)
-        form.submit();
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = `
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="m22 2-7 20-4-9-9-4Z"/>
-            <path d="M22 2 11 13"/>
-          </svg>
-          Enviar Mensagem
-        `;
-      });
-    }
-    </script> -->
+        successMsg.style.display = "none";
+        errorMsg.style.display = "none";
+    
+        const formData = new FormData(form);
+    
+        fetch("https://formsubmit.co/ajax/contato@labtech-rh.com.br", {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success === "true") {
+            successMsg.style.display = "block";
+            form.reset();
+    
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 4000);
+          } else {
+            errorMsg.style.display = "block";
+          }
+        })
+        .catch(() => {
+          errorMsg.style.display = "block";
+        });
+      }
+    });
+  </script>
+    
     
   <script src="assets/js/script.js"></script>
 </body>
