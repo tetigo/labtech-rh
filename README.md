@@ -1,258 +1,263 @@
-﻿# LabTech-RH - Website Institucional
+# LABTECH-RH — Website Institucional
 
 <div align="center">
 
-![LabTech-RH Logo](/assets/images/logo2-pequena.png)
+![LABTECH-RH Logo](assets/images/labtech-good-no-bg.png)
 
-**Conectando sua empresa aos melhores talentos**
+**Recrutamento Estratégico e Humanizado**
 
-[Site Oficial](https://labtech-rh.com.br) | [Contato](mailto:labtech.rh.contato@gmail.com) | [WhatsApp](https://wa.me/5511983940107)
+Conectando empresas visionárias aos melhores talentos do mercado.
+
+[🌐 Site Oficial](https://labtech-rh.com.br) •  
+[📧 E-mail](mailto:contato@labtech-rh.com.br) •  
+[💬 WhatsApp](https://wa.me/5511983940107)
 
 </div>
 
 ---
 
-## Sobre o Projeto
+## 📌 Sobre o Projeto
 
-Website institucional profissional desenvolvido para a **LabTech-RH**, uma consultoria especializada em Recursos Humanos focada em recrutamento, selecao e desenvolvimento de equipes. O site foi projetado para ser envolvente, convincente e extremamente profissional, incentivando visitantes a entrarem em contato.
+Este projeto é o **website institucional oficial da LABTECH-RH**, uma consultoria especializada em **Recrutamento e Seleção**, **Tech Recruiting** e **Consultoria Estratégica em Recursos Humanos**.
 
-### Objetivos
+O site foi desenvolvido como uma **Single Page Application (SPA estática)**, com foco em:
 
-- Apresentar os servicos da LabTech-RH de forma clara e persuasiva
-- Facilitar o contato entre clientes/candidatos e a empresa
-- Demonstrar profissionalismo e expertise em RH
-- Otimizar para mecanismos de busca (SEO)
-- Proporcionar uma experiencia responsiva em todos os dispositivos
-
----
-
-## Funcionalidades
-
-### Pagina Inicial
-- Hero section com descricao persuasiva
-- Carrossel de clientes com animacao suave
-- Botoes de call-to-action para WhatsApp
+- Autoridade de marca
+- Experiência do usuário
+- Conversão de leads
+- Performance e SEO
 - Design moderno e profissional
 
-### Servicos
-- Apresentacao detalhada de 6 servicos principais:
-  - Consultoria de RH
-  - Recrutamento e Selecao
-  - Treinamento e Desenvolvimento
-  - Avaliacao Comportamental
-  - Headhunting Executivo
-  - Tech Recruiting
-
-### Sobre Nos
-- Historia da empresa
-- Missao, Visao e Valores
-- Abordagem humanizada e tecnologica
-
-### Contato
-- Formulario completo para clientes e candidatos
-- Upload de arquivos (CV, documentos)
-- Informacoes de contato (telefone, e-mail, WhatsApp)
-- Validacao de formulario em tempo real
-
-### Recursos Adicionais
-- Design totalmente responsivo
-- Botao flutuante do WhatsApp- Menu de navegacao fixo
-
-[/]- Animacoes suaves e transicoes
-- Otimizacao SEO basica
-- Meta tags Open Graph
-- Sitemap.xml e robots.txt
-- Carrossel infinito de clientes
+Toda a comunicação foi pensada para transmitir **confiança, humanização e estratégia**, alinhada ao posicionamento da LABTECH-RH no mercado.
 
 ---
 
-## Tecnologias Utilizadas
+## 🎯 Objetivos do Site
 
-- **HTML5** - Estrutura semantica
-- **CSS3** - Estilizacao moderna com variaveis CSS
-- **JavaScript (Vanilla)** - Interatividade e funcionalidades
-- **Google Fonts** - Tipografia (Inter + Playfair Display)
-- **SVG Icons** - Icones vetoriais inline
+- Apresentar claramente a proposta de valor da LABTECH-RH  
+- Comunicar serviços de forma estratégica e persuasiva  
+- Facilitar o contato com empresas e candidatos  
+- Fortalecer a autoridade da marca no mercado de RH  
+- Garantir ótima experiência em dispositivos móveis  
+- Otimizar para mecanismos de busca (SEO)
 
 ---
 
-## Estrutura do Projeto
+## ✨ Funcionalidades
 
-```
-mopage/
+### 🔹 Navegação
+- Menu fixo com scroll suave
+- Menu responsivo para dispositivos móveis
+- Navegação por âncoras (single page)
+
+### 🔹 Hero Section
+- Headline estratégica e persuasiva
+- Call-to-actions claros
+- Destaque de métricas de autoridade
+- Background com overlay e elementos decorativos animados
+
+### 🔹 Sobre a Empresa
+- Posicionamento institucional
+- Abordagem humanizada + tecnológica
+- Missão, Visão e Valores
+- Cards informativos com ícones SVG
+
+### 🔹 Serviços
+Apresentação detalhada dos principais serviços:
+
+- Consultoria de RH  
+- Recrutamento e Seleção  
+- Treinamento e Desenvolvimento  
+- Avaliação Comportamental  
+- Headhunting Executivo  
+- Tech Recruiting  
+
+Cada serviço possui:
+- Badge estratégico
+- Ícone ilustrativo
+- Descrição persuasiva
+- CTA direto para contato
+
+### 🔹 Clientes
+- Carrossel infinito de logos
+- Estatísticas de confiança e retenção
+- Efeito de fade lateral para acabamento visual profissional
+
+### 🔹 CTA Estratégico
+- Seção dedicada à conversão
+- Benefícios claros do serviço
+- Botões para contato direto e WhatsApp
+
+### 🔹 Contato
+- Informações institucionais
+- Formulário completo integrado com **FormSubmit**
+- Upload opcional de arquivos
+- Validação de campos
+- Integração direta com e-mail corporativo
+
+### 🔹 Footer
+- Branding institucional
+- Links rápidos
+- Informações de contato
+- Direitos autorais
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- **HTML5** — Estrutura semântica e acessível  
+- **CSS3** — Layout moderno, responsivo e animado  
+- **JavaScript (Vanilla)** — Interações, menu mobile e UX  
+- **Google Fonts** — Montserrat & Inter  
+- **SVG Inline** — Ícones vetoriais leves e escaláveis  
+
+---
+
+## 📁 Estrutura do Projeto
+```bash
+/
 ├── assets/
-│   ├── css/
-│   │   └── styles.css          # Estilos principais
-│   ├── js/
-│   │   └── script.js           # JavaScript principal
-│   └── images/
-│       ├── logo2-pequena.png    # Logo principal
-│       ├── cliente1-4.jfif      # Logos dos clientes
-│       └── ...
-├── index.html                   # Pagina inicial
-├── servicos.html                # Pagina de servicos
-├── sobre.html                   # Pagina sobre nos
-├── contato.html                 # Pagina de contato
-├── sitemap.xml                  # Sitemap para SEO
-├── robots.txt                   # Configuracao de crawlers
-└── vercel.json                  # Configuracao de deploy
+│ ├── css/
+│ │ └── styles.css # Estilos globais
+│ ├── images/
+│ │ ├── labtech-good-no-bg.png
+│ │ ├── hero-bg.jpg
+│ │ ├── about-bg.jpg
+│ │ ├── cliente1.jpg
+│ │ ├── cliente2.jpg
+│ │ └── ...
+│ └── js/
+│ └── script.js # Interações JS
+├── index.html # Página principal
+├── sitemap.xml # SEO
+├── robots.txt # SEO
+└── vercel.json # Deploy
 ```
 
 ---
 
-## Como Usar
+## 🚀 Como Executar Localmente
 
-### Pre-requisitos
+### Pré-requisitos
+Nenhum. Projeto 100% estático.
 
-Nenhum! Este e um site estatico que pode ser aberto diretamente no navegador.
+### Opções de execução
 
-### Instalacao Local
-
-1. Clone o repositorio:
+Abrir diretamente:
 ```bash
-git clone https://github.com/seu-usuario/labtech-rh-website.git
-cd labtech-rh-website
+index.html
 ```
 
-2. Abra o arquivo `index.html` no seu navegador ou use um servidor local:
+
+Ou via servidor local:
 
 ```bash
-# Com Python 3
+# Python
 python -m http.server 8000
 
-# Com Node.js (http-server)
+# Node.js
 npx http-server
 
-# Com PHP
+# PHP
 php -S localhost:8000
 ```
 
-3. Acesse `http://localhost:8000` no navegador
+Acesse:
 
-### Deploy
-
-O projeto esta configurado para deploy na **Vercel**:
-
-1. Conecte seu repositorio GitHub a Vercel
-2. Configure o dominio `labtech-rh.com.br`
-3. O arquivo `vercel.json` ja esta configurado com:
-   - Redirecionamento de www para dominio principal
-   - Headers para sitemap.xml
-
----
-
-## Paleta de Cores
-
-O site utiliza uma paleta profissional baseada na identidade visual da LabTech-RH:
-
-- **Azul Principal**: `#1A314D` - Profissionalismo e confianca
-- **Rosa Destaque**: `#E05C8C` - Humanizacao e acessibilidade
-- **Azul Secundario**: `#0C2B40` - Profundidade
-- **Azul Claro**: `#F0F4F8` - Fundo suave
-- **Cinza Escuro**: `#2C3E50` - Textos
-- **Cinza Claro**: `#F5F7FA` - Fundos alternativos
-
----
-
-## Responsividade
-
-O site e totalmente responsivo e otimizado para:
-
-- **Mobile** (< 480px)
-- **Tablet** (768px - 968px)
-- **Desktop** (> 968px)
-
-### Breakpoints
-
-```css
-/* Mobile */
-@media (max-width: 480px)
-
-/* Tablet */
-@media (max-width: 768px)
-
-/* Desktop pequeno */
-@media (max-width: 968px)
+```bash
+http://localhost:8000
 ```
 
+## 🚀 Deploy
+
+O projeto está preparado para deploy na **Vercel**, garantindo alta performance, HTTPS automático e excelente pontuação em SEO.
+
+### 🔹 Recursos configurados
+- Deploy automático via GitHub
+- Redirecionamento de domínio
+- Headers otimizados para SEO
+- Suporte a SPA estática
+- Sitemap e robots configurados
+
+### 🔹 Processo de deploy
+1. Conecte o repositório ao painel da Vercel
+2. Selecione o framework como **Other**
+3. Defina o diretório raiz (`/`)
+4. Finalize o deploy
+
 ---
 
-## SEO e Otimizacoes
+## 🎨 Identidade Visual
 
-### Meta Tags
-- Meta description otimizada para cada pagina
-- Keywords relevantes
-- Open Graph tags para redes sociais
-- Twitter Cards configurados
+Paleta profissional baseada em **confiança**, **estratégia** e **humanização**:
 
-### Performance
+- **Azul Institucional:** `#1A314D`
+- **Azul Profundo:** `#0C2B40`
+- **Destaques Humanizados:** Tons rosados
+- **Cinza Escuro:** Textos
+- **Cinza Claro:** Fundos
+- **Branco:** Respiro visual e contraste
+
+---
+
+## 📱 Responsividade
+
+O layout foi projetado com **mobile-first** e é totalmente responsivo para:
+
+- 📱 Smartphones
+- 📲 Tablets
+- 💻 Desktops
+
+### 🔹 Breakpoints principais
+
+```css
+@media (max-width: 480px)
+@media (max-width: 768px)
+@media (max-width: 968px)
+
+
+## 🔍 SEO & Performance
+
+O site segue boas práticas modernas de SEO e performance:
+
+- Meta tags otimizadas
+- Open Graph configurado
+- Palavras-chave estratégicas
+- `sitemap.xml`
+- `robots.txt`
+- HTML semântico
 - Imagens otimizadas
-- CSS e JS minificaveis
-- Carregamento assincrono de fontes
-- Estrutura semantica HTML5
-
-### Acessibilidade
-- Atributos ARIA apropriados
-- Navegacao por teclado
-- Contraste de cores adequado
-- Textos alternativos em imagens
+- Fonts com preload
 
 ---
 
-## Formulario de Contato
+## 📨 Formulário de Contato
 
-O formulario de contato permite:
+Formulário integrado com **FormSubmit**, garantindo simplicidade e confiabilidade.
 
-- Selecao entre Cliente/Empresa ou Candidato
-- Campos obrigatorios validados
-- Upload de arquivos (PDF, DOC, DOCX, TXT - max. 5MB)
-- Formatacao automatica de telefone
-- Validacao em tempo real
+### 🔹 Funcionalidades
 
-**Nota**: Atualmente o formulario simula o envio. Para producao, e necessario configurar um backend (PHP, Node.js, ou servico como Formspree/EmailJS).
-
----
-
-## Contribuindo
-
-Contribuicoes sao bem-vindas! Sinta-se a vontade para:
-
-1. Fazer um Fork do projeto
-2. Criar uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudancas (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abrir um Pull Request
+- Envio direto para `contato@labtech-rh.com.br`
+- Campos obrigatórios validados
+- Upload opcional de arquivos
+- UX focada em conversão
 
 ---
 
-## Licenca
+## 📄 Licença
 
-Este projeto e propriedade da **LabTech-RH**. Todos os direitos reservados.
-
----
-
-## Contato
-
-**LabTech-RH**
-
-- Email: [labtech.rh.contato@gmail.com](mailto:labtech.rh.contato@gmail.com)
-- WhatsApp: [(11) 98394-0107](https://wa.me/5511983940107)
-- Website: [labtech-rh.com.br](https://labtech-rh.com.br)
-- Localizacao: Sao Paulo, Brasil
+Este projeto é de propriedade da **LABTECH-RH**.  
+**Todos os direitos reservados.**
 
 ---
 
-## Agradecimentos
+## 📞 Contato
 
-- Google Fonts pela tipografia Inter e Playfair Display
-- Comunidade de desenvolvedores web por recursos e inspiracao
+**LABTECH-RH**
+
+- 📍 São Paulo — Brasil
+- 📧 **contato@labtech-rh.com.br**
+- 📱 **(11) 98394-0107**
+- 🌐 **https://labtech-rh.com.br**
 
 ---
-
-<div align="center">
-
-**Desenvolvido com dedicacao para LabTech-RH**
-
-Se este projeto foi util, considere dar uma estrela!
-
-</div>

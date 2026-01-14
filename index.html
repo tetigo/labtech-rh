@@ -1,158 +1,790 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LabTech-RH - Soluções em Recursos Humanos. Consultoria de RH especializada em recrutamento, seleção e desenvolvimento de equipes.">
-    <meta name="keywords" content="RH, Recrutamento, Seleção, Consultoria RH, Headhunter, Tech Recruiter, Recrutamento Tecnologia">
-    <meta name="author" content="LabTech-RH">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://labtech-rh.com.br/">
-    <meta property="og:title" content="LabTech-RH - Soluções em Recursos Humanos">
-    <meta property="og:description" content="Consultoria de RH especializada em recrutamento, seleção e desenvolvimento de equipes. Conectamos sua empresa aos melhores talentos do mercado.">
-    <meta property="og:image" content="https://labtech-rh.com.br/assets/images/logo2-pequena.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://labtech-rh.com.br/">
-    <meta property="twitter:title" content="LabTech-RH - Soluções em Recursos Humanos">
-    <meta property="twitter:description" content="Consultoria de RH especializada em recrutamento, seleção e desenvolvimento de equipes.">
-    <meta property="twitter:image" content="https://labtech-rh.com.br/assets/logo.png">
-    
-    <title>LabTech-RH - Soluções em Recursos Humanos</title>
-    <link rel="canonical" href="https://labtech-rh.com.br/">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LabTech-RH - Especialistas em Recrutamento e Seleção. Conectamos sua empresa aos melhores talentos do mercado com soluções humanizadas e estratégicas.">
+  <meta name="keywords" content="recrutamento, seleção, RH, recursos humanos, headhunter, tech recruiting, consultoria RH, São Paulo">
+  <meta name="author" content="LabTech-RH">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="LabTech-RH | Recrutamento Estratégico e Humanizado">
+  <meta property="og:description" content="Conectamos sua empresa aos melhores talentos do mercado com soluções humanizadas e estratégicas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://labtech-rh.com.br">
+  <meta property="og:image" content="https://labtech-rh.com.br/assets/images/labtech-good-no-bg.png">
+  
+  <title>LabTech-RH | Recrutamento Estratégico e Humanizado</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo2-pequena.png" alt="LabTech-RH Logo" class="logo-img">
-                </a>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
-                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#inicio" class="navbar-logo">
+        <img src="assets/images/labtech-good-no-bg.png" alt="LabTech-RH" height="48">
+      </a>
+      
+      <!-- Desktop Menu -->
+      <div class="navbar-menu">
+        <a href="#inicio" class="navbar-link">Início</a>
+        <a href="#sobre" class="navbar-link">Sobre</a>
+        <a href="#servicos" class="navbar-link">Serviços</a>
+        <a href="#clientes" class="navbar-link">Clientes</a>
+        <a href="#contato" class="navbar-link">Contato</a>
+        <a href="#contato" class="btn-primary btn-sm">Fale Conosco</a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="navbar-mobile" id="navbarMobile">
+      <div class="container">
+        <a href="#inicio" class="navbar-mobile-link">Início</a>
+        <a href="#sobre" class="navbar-mobile-link">Sobre</a>
+        <a href="#servicos" class="navbar-mobile-link">Serviços</a>
+        <a href="#clientes" class="navbar-mobile-link">Clientes</a>
+        <a href="#contato" class="navbar-mobile-link">Contato</a>
+        <a href="#contato" class="btn-primary" style="text-align: center; margin-top: 1rem;">Fale Conosco</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="Equipe profissional">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-decorative">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+          </svg>
+          Especialistas em Recrutamento & Estratégia
+        </span>
+        
+        <h1 class="hero-title animate-fade-in">
+          Conectando sua empresa aos <span class="hero-highlight">melhores talentos</span>
+        </h1>
+        
+        <p class="hero-description animate-fade-in delay-1">
+          Na LABTECH-RH, transformamos o desafio de encontrar profissionais excepcionais em uma solução estratégica e eficiente. Somos especialistas em identificar, atrair e reter os talentos que farão a diferença no crescimento da sua organização.
+        </p>
+        
+        <div class="hero-buttons animate-fade-in delay-2">
+          <a href="#contato" class="btn-primary btn-lg">
+            Fale com um Especialista
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#servicos" class="btn-outline-light btn-lg">
+            Conheça Nossos Serviços
+          </a>
         </div>
-    </nav>
-
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5511983940107?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LabTech-RH" 
-       class="whatsapp-button" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Entre em contato via WhatsApp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-    </a>
-
-    <!-- Hero Section / Início -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Conectando sua empresa aos <span class="highlight">melhores talentos</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Na LabTech-RH, transformamos o desafio de encontrar profissionais excepcionais em uma solução estratégica e eficiente. Somos especialistas em identificar, atrair e reter os talentos que farão a diferença no crescimento da sua organização.
-                </p>
-                <p class="hero-description">
-                    Com uma abordagem humanizada e tecnológica, combinamos expertise em recrutamento com insights profundos sobre o mercado de trabalho. Nossa missão é criar conexões genuínas entre empresas visionárias e profissionais de alto desempenho, construindo equipes que não apenas preenchem vagas, mas elevam o potencial do seu negócio.
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://wa.me/5511983940107?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LabTech-RH" 
-                       class="btn btn-primary" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        Falar no WhatsApp
-                    </a>
-                    <a href="servicos.html" class="btn btn-secondary">Conheça nossos serviços</a>
-                </div>
+        
+        <div class="hero-stats animate-fade-in delay-3">
+          <div class="hero-stat">
+            <div class="hero-stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
             </div>
+            <div>
+              <div class="hero-stat-value">500+</div>
+              <div class="hero-stat-label">Talentos Conectados</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="hero-stat-value">98%</div>
+              <div class="hero-stat-label">Taxa de Satisfação</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="hero-stat-value">10+</div>
+              <div class="hero-stat-label">Anos de Experiência</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-inner">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Client Carousel -->
-    <section class="clients-section">
-        <div class="container">
-            <h2 class="section-title">Empresas que confiam em nós</h2>
-            <div class="carousel-wrapper">
-                <div class="carousel" id="clientCarousel">
-                    <div class="carousel-track" id="carouselTrack">
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente1.jfif" alt="Cliente 1" class="client-logo">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente2.jfif" alt="Cliente 2" class="client-logo">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente3.jfif" alt="Cliente 3" class="client-logo">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente4.jfif" alt="Cliente 4" class="client-logo">
-                        </div>
-                        <!-- Duplicate slides for infinite loop -->
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente1.jfif" alt="Cliente 1" class="client-logo">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="assets/images/cliente2.jfif" alt="Cliente 2" class="client-logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <section id="sobre" class="section about">
+    <div class="about-bg">
+      <img src="assets/images/about-bg.jpg" alt="">
+    </div>
+    
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Sobre Nós</span>
+        <h2 class="section-title" style="font-family: Arial, Helvetica, sans-serif;">
+          Transformando o <span class="text-gradient">recrutamento</span> em estratégia
+        </h2>
+        <p class="section-description">
+          A LABTECH-RH nasceu da paixão por conectar pessoas e empresas, transformando o processo de recrutamento em uma experiência humanizada e estratégica.
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Somos especialistas em identificar talentos que não apenas preenchem vagas, mas que realmente fazem a diferença no crescimento organizacional.
+          </p>
+          <p>
+            Com uma abordagem única que combina <strong>tecnologia e humanização</strong>, entendemos que cada contratação é uma oportunidade de fortalecer a cultura, impulsionar a inovação e alcançar resultados extraordinários.
+          </p>
+          <p>
+            Nossa expertise abrange desde recrutamento técnico especializado até consultoria estratégica em gestão de pessoas. Acreditamos que o sucesso de uma empresa está diretamente ligado à qualidade de seus talentos.
+          </p>
         </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/logo2-pequena.png" alt="LabTech-RH" class="footer-logo-img">
-                    <p>Conectando sua empresa aos melhores talentos</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <p>Telefone: <a href="tel:+5511983940107">(11) 98394-0107</a></p>
-                    <p>E-mail: <a href="mailto:labtech.rh.contato@gmail.com">labtech.rh.contato@gmail.com</a></p>
-                </div>
+        
+        <div class="about-cards">
+          <div class="card-professional">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 LabTech-RH. Todos os direitos reservados.</p>
+            <h3>Missão</h3>
+            <p>Conectar empresas visionárias aos melhores talentos do mercado, criando parcerias estratégicas que geram crescimento mútuo.</p>
+          </div>
+          
+          <div class="card-professional">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
             </div>
+            <h3>Visão</h3>
+            <p>Ser referência em consultoria de RH, reconhecida pela excelência, inovação e impacto positivo nas organizações e carreiras.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+      
+      <div class="values">
+        <h3 class="values-title">Nossos Valores</h3>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4>Transparência</h4>
+            <p>Comunicação clara e honesta em todas as etapas</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </div>
+            <h4>Ética</h4>
+            <p>Princípios sólidos que guiam nossas ações</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <h4>Humanização</h4>
+            <p>Pessoas no centro de todas as decisões</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                <path d="M9 18h6"/>
+                <path d="M10 22h4"/>
+              </svg>
+            </div>
+            <h4>Inovação</h4>
+            <p>Tecnologia e métodos modernos de recrutamento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="assets/js/script.js"></script>
+  <!-- Services Section -->
+  <section id="servicos" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nossos Serviços</span>
+        <h2 class="section-title" style="font-family: Arial, Helvetica, sans-serif;">
+          Soluções completas em <span class="text-gradient">Recursos Humanos</span>
+        </h2>
+        <p class="section-description">
+          Oferecemos um portfólio completo de serviços para impulsionar seu negócio e construir equipes de alto desempenho.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-badge">Soluções estratégicas</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Consultoria de RH</h3>
+          <p>Estratégias personalizadas que alinham talentos às necessidades específicas do seu negócio. Nossa consultoria oferece soluções humanizadas e inovadoras, transformando desafios de gestão de pessoas em oportunidades de crescimento organizacional.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <span class="service-badge">Fit cultural perfeito</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+          </div>
+          <h3>Recrutamento e Seleção</h3>
+          <p>Processo ágil e profundo para encontrar profissionais qualificados nas áreas de Tecnologia, Negócios, Comercial, Administrativo e Gestão. Garantimos contratações que agregam valor real ao seu negócio.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <span class="service-badge">Capacitação contínua</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <h3>Treinamento e Desenvolvimento</h3>
+          <p>Programas customizados para elevar equipes, líderes e processos. Impulsionamos performance, colaboração e inovação, fortalecendo a cultura da empresa e desenvolvendo competências estratégicas.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <span class="service-badge">Insights profundos</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+              <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+              <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+              <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+              <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+              <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
+            </svg>
+          </div>
+          <h3>Avaliação Comportamental</h3>
+          <p>Serviço especializado para entender profundamente as pessoas que compõem sua equipe. Essencial para o desenvolvimento eficaz, identificando potencial, áreas de melhoria e alinhamento com valores organizacionais.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <span class="service-badge">Liderança estratégica</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/>
+              <path d="M5 21h14"/>
+            </svg>
+          </div>
+          <h3>Headhunting Executivo</h3>
+          <p>Recrutamento especializado para posições de liderança e alta gestão. Utilizamos metodologias avançadas para identificar e atrair executivos que transformarão a estratégia e os resultados da sua organização.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <span class="service-badge">Expertise em tecnologia</span>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3>Tech Recruiting</h3>
+          <p>Especialização em recrutamento para o mercado de tecnologia. Conhecemos profundamente o ecossistema tech, desde startups até grandes corporações, conectando empresas inovadoras com profissionais de TI.</p>
+          <a href="#contato" class="service-link">
+            Saiba mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clientes" class="section clients">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nossos Clientes</span>
+        <h2 class="section-title" style="font-family: Arial, Helvetica, sans-serif;">
+          Empresas que <span class="text-gradient">confiam</span> em nós
+        </h2>
+        <p class="section-description">
+          Temos orgulho de trabalhar com empresas líderes em seus segmentos, construindo parcerias de sucesso.
+        </p>
+      </div>
+    </div>
+    
+    <div class="clients-carousel-wrapper">
+      <div class="clients-carousel">
+        <div class="clients-track">
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente1.jpg" alt="Cliente 1">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente2.jpg" alt="Cliente 2">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente3.jpg" alt="Cliente 3">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente4.jpg" alt="Cliente 4">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente1.jpg" alt="Cliente 1">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente2.jpg" alt="Cliente 2">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente3.jpg" alt="Cliente 3">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente4.jpg" alt="Cliente 4">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente1.jpg" alt="Cliente 1">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente2.jpg" alt="Cliente 2">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente3.jpg" alt="Cliente 3">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente4.jpg" alt="Cliente 4">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente1.jpg" alt="Cliente 1">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente2.jpg" alt="Cliente 2">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente3.jpg" alt="Cliente 3">
+          </div>
+          <div class="client-logo-wrapper">
+            <img src="assets/images/cliente4.jpg" alt="Cliente 4">
+          </div>
+        </div>
+      </div>
+      <div class="clients-fade-left"></div>
+      <div class="clients-fade-right"></div>
+    </div>
+    
+    <div class="container">
+      <div class="clients-stats">
+        <div class="clients-stat">
+          <div class="clients-stat-value">50+</div>
+          <div class="clients-stat-label">Empresas Atendidas</div>
+        </div>
+        <div class="clients-stat">
+          <div class="clients-stat-value">95%</div>
+          <div class="clients-stat-label">Retenção de Clientes</div>
+        </div>
+        <div class="clients-stat">
+          <div class="clients-stat-value">4.9/5</div>
+          <div class="clients-stat-label">Avaliação Média</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-decorative">
+      <div class="cta-blob cta-blob-1"></div>
+      <div class="cta-blob cta-blob-2"></div>
+    </div>
+    
+    <div class="container cta-content">
+      <h2 style="font-family: Arial, Helvetica, sans-serif;">Pronto para transformar seu processo de recrutamento?</h2>
+      <p>Deixe a LABTECH-RH cuidar do seu recrutamento enquanto você foca no que realmente importa: o crescimento do seu negócio.</p>
+      
+      <div class="cta-benefits">
+        <div class="cta-benefit">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <path d="m9 11 3 3L22 4"/>
+          </svg>
+          <span>Redução de até 60% no tempo de contratação</span>
+        </div>
+        <div class="cta-benefit">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <path d="m9 11 3 3L22 4"/>
+          </svg>
+          <span>Processo de seleção humanizado e estratégico</span>
+        </div>
+        <div class="cta-benefit">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <path d="m9 11 3 3L22 4"/>
+          </svg>
+          <span>Acesso aos melhores talentos do mercado</span>
+        </div>
+        <div class="cta-benefit">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <path d="m9 11 3 3L22 4"/>
+          </svg>
+          <span>Suporte completo em todas as etapas</span>
+        </div>
+      </div>
+      
+      <div class="cta-buttons">
+        <a href="#contato" class="btn-white btn-lg">
+          Agende uma Conversa
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/>
+            <path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/5511983940107?text=Olá! Gostaria de saber mais sobre os serviços da LABTECH-RH" target="_blank" rel="noopener noreferrer" class="btn-outline-white btn-lg">
+          Falar via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contato" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contato</span>
+        <h2 class="section-title" style="font-family: Arial, Helvetica, sans-serif;">
+          Entre em <span class="text-gradient">Contato</span>
+        </h2>
+        <p class="section-description">
+          Estamos prontos para ajudar sua empresa a encontrar os melhores talentos. Fale conosco!
+        </p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="card-professional">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Localização</h3>
+                <p>São Paulo, Brasil</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-professional">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Telefone</h3>
+                <a href="tel:+5511983940107">(11) 98394-0107</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-professional">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <h3>E-mail</h3>
+                <a href="mailto:contato@labtech-rh.com.br">contato@labtech-rh.com.br</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-professional card-primary">
+            <div class="contact-info-item">
+              <div class="contact-info-icon-light">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/5511983940107?text=Olá! Gostaria de saber mais sobre os serviços da LABTECH-RH" target="_blank" rel="noopener noreferrer">Fale conosco agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <!-- <form class="card-professional contact-form" id="contactForm"> -->
+            <form 
+            action="https://formsubmit.co/contato@labtech-rh.com.br"
+            method="POST"
+            enctype="multipart/form-data"
+            class="card-professional contact-form"
+            id="contactForm"
+        >
+            <input type="hidden" name="_subject" value="Novo contato - LabTech RH">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <!-- <input type="hidden" name="_next" value="https://labtech-rh.com.br/contato.html?enviado=sucesso"> -->
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="userType">Você é:</label>
+                <select id="userType" name="userType" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="empresa">Cliente / Empresa</option>
+                  <option value="candidato">Candidato</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome Completo *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Telefone *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Assunto *</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="message">Mensagem *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label>Anexar Arquivo (opcional)</label>
+                <div class="file-upload" id="fileUpload">
+                  <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.txt">
+                  <div class="file-upload-content">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                      <polyline points="17 8 12 3 7 8"/>
+                      <line x1="12" x2="12" y1="3" y2="15"/>
+                    </svg>
+                    <span id="fileLabel">Clique para anexar ou arraste o arquivo</span>
+                  </div>
+                </div>
+                <p class="file-hint">Formatos aceitos: PDF, DOC, DOCX, TXT (máx. 5MB)</p>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn-primary btn-lg btn-full" id="submitBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 2-7 20-4-9-9-4Z"/>
+                <path d="M22 2 11 13"/>
+              </svg>
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/labtech-good-no-bg.png" alt="LABTECH-RH" class="footer-logo">
+          <p>Transformamos o desafio de encontrar profissionais excepcionais em uma solução estratégica. Conectamos empresas visionárias aos melhores talentos do mercado.</p>
+          <!-- <div class="footer-social">
+            <a href="https://www.linkedin.com/company/labtech-rh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect width="4" height="12" x="2" y="9"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/labtech.rh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+          </div> -->
+        </div>
+        
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <ul>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>São Paulo, Brasil</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+5511983940107">(11) 98394-0107</a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <a href="mailto:contato@labtech-rh.com.br">contato@labtech-rh.com.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 LabTech-RH. Todos os direitos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5511983940107?text=Olá! Gostaria de saber mais sobre os serviços da LABTECH-RH" target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Contato via WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
