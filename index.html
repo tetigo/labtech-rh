@@ -621,16 +621,20 @@
         
         <div class="contact-form-wrapper">
           <!-- <form class="card-professional contact-form" id="contactForm"> -->
-            <form 
+          <form
             action="https://formsubmit.co/contato@labtech-rh.com.br"
             method="POST"
             enctype="multipart/form-data"
             class="card-professional contact-form"
             id="contactForm"
-        >
+            onsubmit="handleSubmit(event)"
+          >
+          
             <input type="hidden" name="_subject" value="Novo contato - LabTech RH">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+
             <!-- <input type="hidden" name="_next" value="https://labtech-rh.com.br/contato.html?enviado=sucesso"> -->
 
             <div class="form-row">
@@ -784,7 +788,60 @@
     </svg>
   </a>
 
+  <div id="toast" class="toast">
+    <div class="toast-icon">✅</div>
+    <div class="toast-text">
+      Mensagem enviada com sucesso! Em breve entraremos em contato.
+    </div>
+  </div>
+  
   <!-- JavaScript -->
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault(); // impede redirect
+    
+      const form = document.getElementById("contactForm");
+      const toast = document.getElementById("toast");
+      const submitBtn = document.getElementById("submitBtn");
+    
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Enviando...";
+    
+      fetch("https://formsubmit.co/ajax/contato@labtech-rh.com.br", {
+        method: "POST",
+        body: new FormData(form)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success === "true") {
+          form.reset();
+    
+          toast.classList.add("show");
+    
+          setTimeout(() => {
+            toast.classList.remove("show");
+          }, 4000);
+        } else {
+          alert("Erro ao enviar. Tente novamente.");
+        }
+      })
+      .catch(() => {
+        // 🔥 fallback manual (se AJAX falhar)
+        form.submit();
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m22 2-7 20-4-9-9-4Z"/>
+            <path d="M22 2 11 13"/>
+          </svg>
+          Enviar Mensagem
+        `;
+      });
+    }
+    </script>
+    
   <script src="assets/js/script.js"></script>
 </body>
 </html>
