@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![LABTECH-RH Logo](assets/images/labtech-good-no-bg.png)
+![LABTECH-RH Logo](assets/images/labtech-good.jpg)
 
 **Recrutamento Estratégico e Humanizado**
 
