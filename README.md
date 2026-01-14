@@ -214,7 +214,7 @@ O layout foi projetado com **mobile-first** e é totalmente responsivo para:
 @media (max-width: 480px)
 @media (max-width: 768px)
 @media (max-width: 968px)
-
+```
 
 ## 🔍 SEO & Performance
 
