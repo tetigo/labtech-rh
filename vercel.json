@@ -12,17 +12,17 @@
         "permanent": true
       },
       {
-        "source": "/servicos",
+        "source": "/servicos/:path*",
         "destination": "/#servicos",
         "permanent": true
       },
       {
-        "source": "/sobre",
+        "source": "/sobre/:path*",
         "destination": "/#sobre",
         "permanent": true
       },
       {
-        "source": "/contato",
+        "source": "/contato/:path*",
         "destination": "/#contato",
         "permanent": true
       }
