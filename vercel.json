@@ -12,13 +12,45 @@
         "permanent": true
       },
       {
-        "source": "/servicos/:path*",
-        "destination": "/#servicos",
+        "source": "/sobre",
+        "destination": "/#sobre",
+        "permanent": true
+      },
+      {
+        "source": "/sobre.html",
+        "destination": "/#sobre",
         "permanent": true
       },
       {
         "source": "/sobre/:path*",
         "destination": "/#sobre",
+        "permanent": true
+      },
+  
+      {
+        "source": "/servicos",
+        "destination": "/#servicos",
+        "permanent": true
+      },
+      {
+        "source": "/servicos.html",
+        "destination": "/#servicos",
+        "permanent": true
+      },
+      {
+        "source": "/servicos/:path*",
+        "destination": "/#servicos",
+        "permanent": true
+      },
+  
+      {
+        "source": "/contato",
+        "destination": "/#contato",
+        "permanent": true
+      },
+      {
+        "source": "/contato.html",
+        "destination": "/#contato",
         "permanent": true
       },
       {
